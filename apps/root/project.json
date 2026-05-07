@@ -8,9 +8,7 @@
   "targets": {
     "build": {
       "executor": "@angular/build:application",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/root",
         "browser": "apps/root/src/main.ts",
@@ -21,9 +19,7 @@
             "input": "apps/root/public"
           }
         ],
-        "styles": [
-          "apps/root/src/styles.css"
-        ]
+        "styles": ["apps/root/src/styles.css"]
       },
       "configurations": {
         "production": {
