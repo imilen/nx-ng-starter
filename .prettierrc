@@ -1,3 +1,54 @@
 {
-  "singleQuote": true
+  "attributeGroups": [
+    "$CODE_GUIDE",
+    "$DEFAULT",
+    "$ANGULAR",
+    "^let-.*$",
+    "^i18n$",
+    "^i18n-.*$"
+  ],
+  "attributeIgnoreCase": false,
+  "attributeSort": "ASC",
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "organizeImportsSkipDestructiveCodeActions": true,
+  "overrides": [
+    {
+      "excludeFiles": ["nx.json", "package.json", "project.json"],
+      "files": ["*.json"],
+      "options": {
+        "jsonRecursiveSort": true,
+        "plugins": ["prettier-plugin-sort-json"]
+      }
+    },
+    {
+      "files": [
+        "./apps/root/**/*.html",
+        "./apps/root/**/*.css",
+        "./apps/root/**/*.ts"
+      ],
+      "options": {
+        "tailwindStylesheet": "./apps/root/src/styles/index.css"
+      }
+    }
+  ],
+  "plugins": [
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-organize-attributes",
+    "prettier-plugin-tailwindcss"
+  ],
+  "printWidth": 80,
+  "proseWrap": "never",
+  "semi": true,
+  "singleAttributePerLine": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "tailwindAttributes": ["class", "ngClass"],
+  "tailwindFunctions": ["twMerge", "twJoin", "tv", "cn"],
+  "tailwindPreserveDuplicates": false,
+  "tailwindPreserveWhitespace": true,
+  "trailingComma": "all",
+  "useTabs": false
 }
