@@ -1,0 +1,15 @@
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 0.625em !important;
+  }
+
+  html,
+  body {
+    position: relative;
+  }
+
+  body {
+    @apply bg-background font-custom text-16 text-foreground antialiased;
+  }
+}

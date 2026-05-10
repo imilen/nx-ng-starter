@@ -1,5 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss' source('../app/') important;
 
 @import './theme.css';
 @import './base.css';
 @import './utilities.css';
+
+/* Scoped Dark Mode: */
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+
+/* Global Root Dark Mode */
+@custom-variant dark (html.dark &);
+
+.dark {
+  --color-background: oklch(0% 0 0);
+  --color-foreground: oklch(100% 0 0);
+}
