@@ -1,0 +1,14 @@
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html,
+  body {
+    @apply relative;
+  }
+
+  body {
+    @apply bg-background font-custom text-16 text-foreground antialiased;
+  }
+}
