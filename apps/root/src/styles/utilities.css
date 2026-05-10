@@ -1,0 +1,8 @@
+@utility flex-fluid {
+  @apply flex flex-1 flex-col;
+}
+
+@utility app-container {
+  padding-inline: 1rem;
+  @apply container mx-auto my-0 py-0;
+}
