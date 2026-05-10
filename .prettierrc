@@ -12,7 +12,7 @@
   "bracketSameLine": true,
   "bracketSpacing": true,
   "endOfLine": "lf",
-  "htmlWhitespaceSensitivity": "css",
+  "htmlWhitespaceSensitivity": "ignore",
   "organizeImportsSkipDestructiveCodeActions": true,
   "overrides": [
     {
