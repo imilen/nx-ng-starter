@@ -63,6 +63,7 @@
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^10.0.0",
     "eslint-plugin-playwright": "^1.6.2",
+    "jasmine-marbles": "~0.9.1",
     "jsdom": "^27.1.0",
     "nx": "22.7.1",
     "postcss": "^8.5.14",
