@@ -35,7 +35,8 @@
               "maximumError": "8kb"
             }
           ],
-          "outputHashing": "all"
+          "outputHashing": "all",
+          "serviceWorker": "apps/root/ngsw-config.json"
         },
         "development": {
           "optimization": false,
