@@ -63,8 +63,12 @@
       "executor": "@nx/eslint:lint"
     },
     "test": {
-      "executor": "@angular/build:unit-test",
-      "options": {}
+      "executor": "@nx/vitest:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "reportsDirectory": "../../coverage/apps/root",
+        "configFile": "apps/root/vite.config.ts"
+      }
     },
     "serve-static": {
       "continuous": true,
