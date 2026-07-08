@@ -2,7 +2,9 @@
   "name": "@nx-ng-starter/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "e2e:setup": "pnpm exec playwright install chromium firefox webkit"
+  },
   "private": true,
   "dependencies": {
     "@angular/common": "~21.2.11",
